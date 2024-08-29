@@ -21,7 +21,7 @@ export default {
         { type: 'link', text: 'LANDING', href: '#' }
       ],
       navbarRight: [
-        { type: 'link', text: 'Cart', href: '#', icon: '/public/svg/svg-1.svg' },
+        { type: 'link', text: 'CART', href: '#', icon: '/public/svg/svg-1.svg' },
         { type: 'link', text: 'SEARCH', href: '#' }
       ]
     }
