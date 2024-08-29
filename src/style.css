@@ -18,6 +18,10 @@
   width: 100%;
 }
 
+.col-50 {
+  width: 50%;
+}
+
 .col-25 {
   width: 25%;
 }
@@ -33,7 +37,7 @@
   --text-secondary: #FFFFFF;
   --text-tertiary: #B7903C;
   --text-warning: #B2B2B2;
-  --text-danger: #AB4027;
+  --text-danger: #D2401E;
 }
 
 .d-flex {
@@ -42,6 +46,10 @@
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
 
 .align-items-center {

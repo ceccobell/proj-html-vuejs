@@ -31,6 +31,24 @@
                 </ul>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-25 d-flex align-items-center">
+                    <div class="circle">
+                        <button class="previous-btn fs-10">PREV</button>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <img src="/public/img/h3-rev-img-5.png" alt="" class="bg-img">
+                    <img src="/public/img/h3-rev-img-6.png" alt="" class="featured-img">
+                </div>
+                <div class="col-25 d-flex align-items-center justify-content-end">
+                    <div class="circle">
+                        <button class="next-btn fs-10">NEXT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 </template>
 
@@ -57,7 +75,7 @@ export default {
         margin: 0 auto;
     }
 
-    button {
+    .navbar button {
         color: #FFFF;
         background-color: var(--bg-button);
         border: 0;
@@ -82,5 +100,45 @@ export default {
     a {
         color: var(--text-secondary);
         text-decoration: none;
+    }
+
+    .container-img {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+        width: 50%;
+    }
+
+    .bg-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-img {
+        position: absolute;
+        z-index: 2;
+        width: 35%;
+        height: auto;
+    }
+
+    .previous-btn, .next-btn {
+        color: var(--text-danger);
+        writing-mode: vertical-lr;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 0;
+        background-color: var(--bg-primary);
+        margin-left: -30px;
+        padding-left: 15px;
+        font-weight: 600;
+    }
+
+    .next-btn {
+        transform: rotate(180deg);
+        margin-right: -30px;
+        padding-left: 15px;
     }
 </style>
