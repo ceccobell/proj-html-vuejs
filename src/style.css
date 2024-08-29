@@ -26,3 +26,11 @@
 .d-flex {
   display: flex;
 }
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.list-unstyled{
+  list-style-type: none;
+}
