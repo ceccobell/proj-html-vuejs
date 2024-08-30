@@ -3,10 +3,12 @@
     <TestimonialSection />
     <PizzaSpecials :pizzas="pizzaSpecials"/>
     <TeamSection />
+    <ClientsSection  />
 </template>
 
 <script>
 import AdvertisingSection from './AdvertisingSection.vue';
+import ClientsSection from './ClientsSection.vue';
 import PizzaSpecials from './PizzaSpecials.vue';
 import TeamSection from './TeamSection.vue';
 import TestimonialSection from './TestimonialSection.vue';
@@ -16,7 +18,8 @@ export default {
         AdvertisingSection,
         TestimonialSection,
         PizzaSpecials,
-        TeamSection
+        TeamSection,
+        ClientsSection
     },
     data() {
         return {

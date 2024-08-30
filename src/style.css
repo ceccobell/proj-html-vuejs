@@ -80,14 +80,14 @@
   justify-content: center;
 }
 
-.icon-pizza img {
+.icon-pizza-img {
   width: 10px;
   height: auto;
 }
 
 /* UTILITIES */
 :root {
-  --bg-primary: #F7F7F2;
+  --bg-primary: #EBEBDE;
   --bg-secondary: #F8F8F4CC;
   --bg-testimonial: #E4E4D4;
   --bg-button: #D2401E;

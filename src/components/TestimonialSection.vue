@@ -21,7 +21,7 @@
                     <button class="next-btn fs-10">NEXT</button>
                 </div>
                 <div class="icon-pizza">
-                        <img src="/public/svg/svg-4.svg" alt="">
+                        <img src="/public/svg/svg-4.svg" alt="" class="icon-pizza-img">
                     </div>
             </div>
         </div>

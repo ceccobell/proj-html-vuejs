@@ -18,10 +18,7 @@ export default {
 }
 </script>
 
-<style>
-    .col-100 {
-        background-color: black;
-    }
+<style scoped>
     .card {
         padding: 5px 5px 0px 0px;
     }

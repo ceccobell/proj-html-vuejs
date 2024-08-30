@@ -7,7 +7,7 @@
         <div class="grid-item item5"></div>
         <div class="grid-item item6 position-relative">
             <div class="icon-pizza">
-                <img src="/public/svg/svg-4.svg" alt="">
+                <img src="/public/svg/svg-4.svg" alt="" class="icon-pizza-img">
             </div>
         </div>
         <div class="grid-item item7"></div>
@@ -17,9 +17,9 @@
     <div class="container">
         <div class="row">
             <div class="col-25 position-relative" v-for="img, index in teamImgs" :key="index">
-                <img :src="img.src" alt="">
+                <img :src="img.src" alt="" class="team-img">
                 <div class="icon-pizza" v-show="index == 3">
-                    <img src="/public/svg/svg-4.svg" alt="">
+                    <img src="/public/svg/svg-4.svg" alt="" class="icon-pizza-img">
                 </div>
             </div>
         </div>
@@ -99,5 +99,10 @@ export default {
     }
     .item9 {
         background-position: 100% 100%;
+    }
+
+    .team-img {
+        width: 100%;
+        height: auto;
     }
 </style>
