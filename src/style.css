@@ -101,6 +101,10 @@
   --text-more-danger: #AB4027;
 }
 
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
 .text-danger {
   color: var(--text-danger);
 }
