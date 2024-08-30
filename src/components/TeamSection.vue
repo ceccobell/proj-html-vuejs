@@ -14,11 +14,46 @@
         <div class="grid-item item8"></div>
         <div class="grid-item item9"></div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-25 position-relative" v-for="img, index in teamImgs" :key="index">
+                <img :src="img.src" alt="">
+                <div class="icon-pizza" v-show="index == 3">
+                    <img src="/public/svg/svg-4.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
-    
+    data() {
+        return {
+            teamImgs: [
+                {
+                    nome: '',
+                    src: '/public/img/h1-team-1a-700x700.jpg',
+                    ruolo: ''
+                },
+                {
+                    nome: 'FRANK BAILEY',
+                    src: '/public/img/h1-team-2a.jpg',
+                    ruolo: 'Kitchen Porter'
+                },
+                {
+                    nome: '',
+                    src: '/public/img/h1-team-4a.jpg',
+                    ruolo: ''
+                },
+                {
+                    nome: '',
+                    src: '/public/img/h1-team-3a.jpg',
+                    ruolo: ''
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -29,6 +64,7 @@ export default {
         grid-template-rows: 20% 60% 20%;
         width: 100%;
         height: 200px;
+        margin-bottom: 5px;
     }
 
     .grid-item {
