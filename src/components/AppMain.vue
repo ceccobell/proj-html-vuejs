@@ -2,18 +2,21 @@
     <AdvertisingSection :images="AdvertisingImgs" />
     <TestimonialSection />
     <PizzaSpecials :pizzas="pizzaSpecials"/>
+    <TeamSection />
 </template>
 
 <script>
 import AdvertisingSection from './AdvertisingSection.vue';
 import PizzaSpecials from './PizzaSpecials.vue';
+import TeamSection from './TeamSection.vue';
 import TestimonialSection from './TestimonialSection.vue';
 
 export default {
     components: {
         AdvertisingSection,
         TestimonialSection,
-        PizzaSpecials
+        PizzaSpecials,
+        TeamSection
     },
     data() {
         return {
