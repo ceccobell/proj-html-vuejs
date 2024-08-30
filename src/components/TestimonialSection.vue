@@ -16,10 +16,13 @@
                     <span class="circle-sm"></span>
                 </div>
             </div>
-            <div class="col-25 d-flex align-items-center justify-content-end">
+            <div class="col-25 d-flex align-items-center justify-content-end position-relative">
                 <div class="circle">
                     <button class="next-btn fs-10">NEXT</button>
                 </div>
+                <div class="icon-pizza">
+                        <img src="/public/svg/svg-4.svg" alt="">
+                    </div>
             </div>
         </div>
     </div>

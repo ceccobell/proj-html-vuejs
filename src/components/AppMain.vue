@@ -1,7 +1,7 @@
 <template>
     <AdvertisingSection :images="AdvertisingImgs" />
     <TestimonialSection />
-    <PizzaSpecials />
+    <PizzaSpecials :pizzas="pizzaSpecials"/>
 </template>
 
 <script>
@@ -34,6 +34,23 @@ export default {
                     src: '/public/img/h3-img-4.jpg',
                     clicked: false
                 },
+            ],
+            pizzaSpecials: [
+                {
+                    prezzo: '$10',
+                    nome: 'COMBO PICCOLO',
+                    descrizione: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui.'
+                },
+                {
+                    prezzo: '$20',
+                    nome: 'COMBO MEZZO',
+                    descrizione: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui.'
+                },
+                {
+                    prezzo: '$30',
+                    nome: 'COMBO GRANDE',
+                    descrizione: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui.'
+                }
             ]
         }
     }
