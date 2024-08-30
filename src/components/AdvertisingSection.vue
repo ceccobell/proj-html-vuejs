@@ -19,12 +19,15 @@ export default {
 </script>
 
 <style>
+    .col-100 {
+        background-color: black;
+    }
     .card {
-        padding: 5px 5px 5px 0px;
+        padding: 5px 5px 0px 0px;
     }
 
     .row div:last-child .card {
-        padding: 5px 0px;
+        padding: 5px 0px 0px 0px;
     }
 
     img {

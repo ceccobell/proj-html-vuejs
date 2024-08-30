@@ -122,23 +122,4 @@ export default {
         width: 35%;
         height: auto;
     }
-
-    .previous-btn, .next-btn {
-        color: var(--text-danger);
-        writing-mode: vertical-lr;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: 0;
-        background-color: var(--bg-primary);
-        margin-left: -30px;
-        padding-left: 15px;
-        font-weight: 600;
-    }
-
-    .next-btn {
-        transform: rotate(180deg);
-        margin-right: -30px;
-        padding-left: 15px;
-    }
 </style>
