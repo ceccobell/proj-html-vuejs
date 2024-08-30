@@ -4,11 +4,13 @@
     <PizzaSpecials :pizzas="pizzaSpecials"/>
     <TeamSection />
     <ClientsSection  />
+    <MenuPizza />
 </template>
 
 <script>
 import AdvertisingSection from './AdvertisingSection.vue';
 import ClientsSection from './ClientsSection.vue';
+import MenuPizza from './MenuPizza.vue';
 import PizzaSpecials from './PizzaSpecials.vue';
 import TeamSection from './TeamSection.vue';
 import TestimonialSection from './TestimonialSection.vue';
@@ -19,7 +21,8 @@ export default {
         TestimonialSection,
         PizzaSpecials,
         TeamSection,
-        ClientsSection
+        ClientsSection,
+        MenuPizza
     },
     data() {
         return {
