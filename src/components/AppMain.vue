@@ -1,16 +1,19 @@
 <template>
     <AdvertisingSection :images="AdvertisingImgs" />
     <TestimonialSection />
+    <PizzaSpecials />
 </template>
 
 <script>
 import AdvertisingSection from './AdvertisingSection.vue';
+import PizzaSpecials from './PizzaSpecials.vue';
 import TestimonialSection from './TestimonialSection.vue';
 
 export default {
     components: {
         AdvertisingSection,
-        TestimonialSection
+        TestimonialSection,
+        PizzaSpecials
     },
     data() {
         return {

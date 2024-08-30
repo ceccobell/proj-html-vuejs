@@ -101,25 +101,4 @@ export default {
         color: var(--text-secondary);
         text-decoration: none;
     }
-
-    .container-img {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 0px;
-        width: 50%;
-    }
-
-    .bg-img {
-        width: 100%;
-        height: auto;
-    }
-
-    .featured-img {
-        position: absolute;
-        z-index: 2;
-        width: 35%;
-        height: auto;
-    }
 </style>
