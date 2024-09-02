@@ -78,6 +78,9 @@ export default {
             ]
         };
     },
+    mounted() {
+        this.startAutoSlide();
+    },
     computed: {
         currentBgImage() {
             return this.images[this.currentImageIndex].bg;
@@ -93,6 +96,9 @@ export default {
         prevImage() {
             this.currentImageIndex =
                 (this.currentImageIndex - 1 + this.images.length) % this.images.length;
+        },
+        startAutoSlide() {
+            this.interval = setInterval(this.nextImage, 5000);
         }
     }
 }

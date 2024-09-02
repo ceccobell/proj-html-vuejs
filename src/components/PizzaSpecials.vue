@@ -71,4 +71,14 @@ export default {
         font-weight: 600;
         margin-bottom: 7px;
     }
+
+    .bg-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-img {
+        width: 50%;
+        height: auto;
+    }
 </style>
