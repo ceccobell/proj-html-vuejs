@@ -6,6 +6,7 @@
     <ClientsSection  />
     <MenuPizza />
     <PizzaDeals />
+    <BookTable />
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import PizzaSpecials from './PizzaSpecials.vue';
 import TeamSection from './TeamSection.vue';
 import TestimonialSection from './TestimonialSection.vue';
 import PizzaDeals from './PizzaDeals.vue';
+import BookTable from './BookTable.vue';
 
 export default {
     components: {
@@ -25,7 +27,8 @@ export default {
         TeamSection,
         ClientsSection,
         MenuPizza,
-        PizzaDeals
+        PizzaDeals,
+        BookTable
     },
     data() {
         return {
