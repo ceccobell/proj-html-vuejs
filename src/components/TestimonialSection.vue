@@ -7,13 +7,13 @@
                 </div>
             </div>
             <div class="col-50 text-center">
-                <h1 class="quote">"</h1>
+                <h1 class="text-tertiary">"</h1>
                 <h2 class="fs-18">"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h2>
-                <span class="fs-10">WASHINGTON POST 2018</span>
+                <span class="fs-10 text-danger">WASHINGTON POST 2018</span>
                 <div class="d-flex justify-content-center">
-                    <span class="circle-sm"></span>
-                    <span class="circle-sm"></span>
-                    <span class="circle-sm"></span>
+                    <span class="circle-sm text-tertiary"></span>
+                    <span class="circle-sm bg-testimonial"></span>
+                    <span class="circle-sm bg-testimonial"></span>
                 </div>
             </div>
             <div class="col-25 d-flex align-items-center justify-content-end position-relative">
@@ -44,14 +44,6 @@ export default {
 
     .col-50 {
         padding: 50px 0px;
-    }
-
-    .quote {
-        color: var(--text-tertiary); 
-    }
-
-    .col-50 span {
-        color: var(--text-danger);
     }
 
     .circle-sm {

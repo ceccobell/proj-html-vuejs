@@ -8,13 +8,13 @@
             <div class="col-50 d-flex align-items-center justify-content-center">
                 <div class="content">
                     <h1 class="fs-20">SPECIALS*</h1>
-                    <p class="fs-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesent ut.</p>
+                    <p class="fs-12 text-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesent ut.</p>
                     <ul class="list-unstyled">
                         <li v-for="pizza,index in pizzas" :key="index" class="d-flex">
                             <div class="price fs-14">{{ pizza.prezzo }}</div>
                             <div>
                                 <div class="nome-pizza fs-14">{{ pizza.nome }}</div>
-                                <p class="fs-12">{{ pizza.descrizione }}</p>
+                                <p class="fs-12 text-warning">{{ pizza.descrizione }}</p>
                             </div>
                         </li>
                     </ul>
@@ -51,10 +51,6 @@ export default {
     h1, p, ul {
         width: 70%;
         text-align: left;
-    }
-
-    .content p {
-        color: var(--text-warning);
     }
 
     .price {

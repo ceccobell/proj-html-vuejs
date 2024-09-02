@@ -24,7 +24,8 @@
                 <ul class="list-unstyled d-flex align-items-center">
                     <li v-for="item in navbarRightItems" :key="item.text">
                         <a :href="item.href" class="fs-10">
-                            <img v-if="item.icon" :src="item.icon" class="icon" alt="icon" />
+                            <img v-show="item.icon" :src="item.icon" class="icon" alt="icon" />
+                            <i v-show="item.text == 'SEARCH'" class="fa-solid fa-magnifying-glass"></i>
                             {{ item.text }}
                         </a>
                     </li>
@@ -76,7 +77,7 @@ export default {
     }
 
     .navbar button {
-        color: #FFFF;
+        color: var(--text-secondary);
         background-color: var(--bg-button);
         border: 0;
         padding: 10px 20px;

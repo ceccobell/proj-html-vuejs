@@ -238,3 +238,7 @@
 .my-10 {
   margin: 10px 0px;
 }
+
+button {
+  cursor: pointer;
+}
