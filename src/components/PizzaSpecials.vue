@@ -49,8 +49,8 @@ export default {
     }
 
     h1, p, ul {
-        width: 70%; /* Fai sì che gli elementi occupino tutta la larghezza disponibile */
-        text-align: left; /* Allinea il testo a sinistra */
+        width: 70%;
+        text-align: left;
     }
 
     .content p {
