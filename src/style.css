@@ -61,15 +61,15 @@
 }
 
 .bg-img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 300px;
 }
 
 .featured-img {
   position: absolute;
   z-index: 2;
-  width: 35%;
-  height: auto;
+  width: auto;
+  height: 300px;
 }
 
 .icon-pizza {

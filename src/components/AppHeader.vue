@@ -36,16 +36,16 @@
             <div class="row">
                 <div class="col-25 d-flex align-items-center">
                     <div class="circle">
-                        <button class="previous-btn fs-10">PREV</button>
+                        <button class="previous-btn fs-10"  @click="prevImage">PREV</button>
                     </div>
                 </div>
                 <div class="container-img">
-                    <img src="/public/img/h3-rev-img-5.png" alt="" class="bg-img">
-                    <img src="/public/img/h3-rev-img-6.png" alt="" class="featured-img">
+                    <img :src="currentBgImage" alt="" class="bg-img">
+                    <img :src="currentFeaturedImage" alt="" class="featured-img">
                 </div>
                 <div class="col-25 d-flex align-items-center justify-content-end">
                     <div class="circle">
-                        <button class="next-btn fs-10">NEXT</button>
+                        <button class="next-btn fs-10" @click="nextImage">NEXT</button>
                     </div>
                 </div>
             </div>
@@ -58,6 +58,42 @@ export default {
     props: {
         navbarCenterItems: Array,
         navbarRightItems: Array
+    },
+    data() {
+        return {
+            currentImageIndex: 0,
+            images: [
+                {
+                    bg: '/public/img/h3-rev-img-5.png',
+                    featured: '/public/img/h3-rev-img-6.png'
+                },
+                {
+                    bg: '/public/img/h3-rev-img-1.png',
+                    featured: '/public/img/h3-rev-img-2.png'
+                },
+                {
+                    bg: '/public/img/h3-rev-img-3.png',
+                    featured: '/public/img/h3-rev-img-4.png'
+                }
+            ]
+        };
+    },
+    computed: {
+        currentBgImage() {
+            return this.images[this.currentImageIndex].bg;
+        },
+        currentFeaturedImage() {
+            return this.images[this.currentImageIndex].featured;
+        }
+    },
+    methods: {
+        nextImage() {
+            this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+        },
+        prevImage() {
+            this.currentImageIndex =
+                (this.currentImageIndex - 1 + this.images.length) % this.images.length;
+        }
     }
 }
 </script>
