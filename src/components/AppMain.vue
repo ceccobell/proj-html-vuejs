@@ -5,6 +5,7 @@
     <TeamSection />
     <ClientsSection  />
     <MenuPizza />
+    <WhereFindUs />
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import MenuPizza from './MenuPizza.vue';
 import PizzaSpecials from './PizzaSpecials.vue';
 import TeamSection from './TeamSection.vue';
 import TestimonialSection from './TestimonialSection.vue';
+import WhereFindUs from './WhereFindUs.vue';
 
 export default {
     components: {
@@ -22,7 +24,8 @@ export default {
         PizzaSpecials,
         TeamSection,
         ClientsSection,
-        MenuPizza
+        MenuPizza,
+        WhereFindUs
     },
     data() {
         return {

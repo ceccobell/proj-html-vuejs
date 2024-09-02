@@ -117,8 +117,8 @@ export default {
     }
 
     .square {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background-color: var(--bg-tertiary);
         position: absolute;
         bottom: 0;
@@ -129,7 +129,7 @@ export default {
     }
 
     .square img {
-        width: 15px;
+        width: 10px;
         height: auto;
     }
 </style>
