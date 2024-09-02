@@ -18,7 +18,16 @@
     <div class="container">
         <div class="row">
             <div class="col-25 position-relative" v-for="img, index in teamImgs" :key="index">
-                <img :src="img.src" alt="" class="team-img">
+                <div class="image-wrapper">
+                    <img :src="img.src" :alt="img.nome" class="team-img">
+                    <div class="overlay">
+                        <h3 class="text-white fs-14">{{ img.nome }}</h3>
+                        <p class="text-white fs-8">{{ img.ruolo }}</p>
+                        <div class="text-white fs-8 social">
+                            <i v-for="(icon, index) in socialIcons" :key="index" :class="`fa-brands ${icon} text-white fs-8`"></i>
+                        </div>
+                    </div>
+                </div>
                 <div class="icon-pizza" v-show="index == 3">
                     <img src="/public/svg/svg-4.svg" alt="" class="icon-pizza-img">
                 </div>
@@ -33,25 +42,31 @@ export default {
         return {
             teamImgs: [
                 {
-                    nome: '',
+                    nome: 'Mario Rossi',
                     src: '/public/img/h1-team-1a-700x700.jpg',
-                    ruolo: ''
+                    ruolo: 'Chef'
                 },
                 {
-                    nome: 'FRANK BAILEY',
+                    nome: 'Frank Bailey',
                     src: '/public/img/h1-team-2a.jpg',
                     ruolo: 'Kitchen Porter'
                 },
                 {
-                    nome: '',
+                    nome: 'Luigi Bianchi',
                     src: '/public/img/h1-team-4a.jpg',
-                    ruolo: ''
+                    ruolo: 'Pizzaiolo'
                 },
                 {
-                    nome: '',
+                    nome: 'Anna Verdi',
                     src: '/public/img/h1-team-3a.jpg',
-                    ruolo: ''
+                    ruolo: 'Manager'
                 },
+            ],
+            socialIcons: [
+                'fa-twitter',
+                'fa-facebook-f',
+                'fa-square-instagram',
+                'fa-linkedin-in'
             ]
         }
     }
@@ -112,8 +127,46 @@ export default {
         background-position: 100% 100%;
     }
 
+    .image-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
     .team-img {
         width: 100%;
         height: auto;
+        transition: opacity 0.3s ease;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        background-color: var(--bg-button);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-wrapper:hover .team-img {
+        opacity: 0;
+    }
+
+    .image-wrapper:hover .overlay {
+        opacity: 1;
+    }
+
+    .social {
+        margin-top: 10px;
+    }
+
+    i {
+        margin: 0px 5px;
     }
 </style>
