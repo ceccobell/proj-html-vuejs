@@ -13,6 +13,7 @@
         <div class="grid-item item7"></div>
         <div class="grid-item item8"></div>
         <div class="grid-item item9"></div>
+        <h1 class="text-white">GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!</h1>
     </div>
     <div class="container">
         <div class="row">
@@ -65,6 +66,16 @@ export default {
         width: 100%;
         height: 200px;
         margin-bottom: 5px;
+        position: relative;
+    }
+
+    h1 {
+        position: absolute;
+        top: 17%;
+        left: 20%;
+        width: 20%;
+        font-size: 26px;
+        line-height: 1;
     }
 
     .grid-item {
