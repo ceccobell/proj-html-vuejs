@@ -66,13 +66,6 @@ export default {
         margin-top: 5px
     }
 
-    .bg-cielostellato {
-        background-image: url(/public/img/cielostellato.PNG);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
     .content {
         width: 100%;
         display: flex;

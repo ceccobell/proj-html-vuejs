@@ -59,6 +59,7 @@ export default {
         width: 160px;
         height: 40px;
         font-size: 12px;
+        border: 1px solid black;
     }
 
     .icon {

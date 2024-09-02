@@ -23,6 +23,10 @@
   width: 50%;
 }
 
+.col-33 {
+  width: calc(100% / 3);
+}
+
 .col-25 {
   width: 25%;
 }
@@ -100,6 +104,11 @@
   --text-warning: #A6A6A6;
   --text-danger: #D2401E;
   --text-more-danger: #AB4027;
+  --text-success: #339966;
+}
+
+.text-success {
+  color: var(--text-success);
 }
 
 .text-white {
@@ -120,6 +129,13 @@
 
 .text-warning {
   color: var(--text-warning);
+}
+
+.bg-cielostellato {
+  background-image: url(/public/img/cielostellato.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .position-relative {
@@ -150,6 +166,10 @@
   align-items: center;
 }
 
+.align-items-end {
+  align-items: end;
+}
+
 .text-center {
   text-align: center;
 }
@@ -160,6 +180,10 @@
 
 .list-unstyled{
   list-style-type: none;
+}
+
+.fs-8 {
+  font-size: 8px;
 }
 
 .fs-10 {
