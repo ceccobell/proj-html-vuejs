@@ -90,6 +90,35 @@
   height: auto;
 }
 
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: var(--bg-button);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .img-hovered {
+  opacity: 0;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
 /* UTILITIES */
 :root {
   --bg-primary: #EBEBDE;

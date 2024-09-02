@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-25 position-relative" v-for="img, index in teamImgs" :key="index">
                 <div class="image-wrapper">
-                    <img :src="img.src" :alt="img.nome" class="team-img">
+                    <img :src="img.src" :alt="img.nome" class="img-hovered">
                     <div class="overlay">
                         <h3 class="text-white fs-14">{{ img.nome }}</h3>
                         <p class="text-white fs-8">{{ img.ruolo }}</p>
@@ -127,39 +127,10 @@ export default {
         background-position: 100% 100%;
     }
 
-    .image-wrapper {
-        position: relative;
-        width: 100%;
-    }
-
-    .team-img {
+    .img-hovered {
         width: 100%;
         height: auto;
         transition: opacity 0.3s ease;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        height: 90%;
-        background-color: var(--bg-button);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    .image-wrapper:hover .team-img {
-        opacity: 0;
-    }
-
-    .image-wrapper:hover .overlay {
-        opacity: 1;
     }
 
     .social {
